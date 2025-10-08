@@ -1,4 +1,4 @@
-print ("Cargando.... ") 
+print ("Cargando....Bateria ") 
 
 while True:
     bateria = input("Ingrese el nivel de bateria (0-100): ")
