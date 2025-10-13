@@ -1,5 +1,18 @@
 print("=======Cajero BancoCo=======")
 
+contraseña_correcta = "12345"
+
+while True: 
+    entrada = input("Introduce el ping  de su tarjeta: ")
+
+    if entrada == contraseña_correcta:
+        print("Acceso concedido")
+        break  
+    else:
+        print("Contraseña incorrecta, intenta de nuevo")
+
+
+
 while True:
         cuenta = input("\nCuanto dinero tienes en la cuenta? ")
         try:
