@@ -1,13 +1,20 @@
-while True:
-    cuenta = input("\n¿Cuánto dinero tienes en la cuenta? ")
+empleado = {
+    "nombre": "Walter",
+    "edad": 25,
+    "cargo": "Programador",
+    "salario": 1200
+}
 
-    try:
-        cuenta = float(cuenta)   # Intentamos convertir a número
+# Acceder a datos específicos
+print("Empleado:", empleado["nombre"])
+print("Cargo:", empleado["cargo"])
 
-        if cuenta >= 0:          # Verificamos que sea mayor o igual a 0
-            break                # Si cumple, salimos del bucle
-        else:
-            print("Error: el valor no puede ser negativo. Intenta de nuevo.")
-            
-    except ValueError:
-        print("Error: debes ingresar solo números.")
+# Modificar un valor
+empleado["salario"] = 1300
+
+# Agregar nuevo dato
+empleado["departamento"] = "TI"
+
+# Mostrar todo el diccionario
+for clave, valor in empleado.items():
+    print(clave, "=>", valor)
